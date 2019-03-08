@@ -1,0 +1,10 @@
+.checklist-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  background: #fff;
+  padding: 20px;
+  &__task {
+    font-weight: 700;
+  }
+}

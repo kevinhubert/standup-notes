@@ -1,0 +1,15 @@
+.header-primary {
+  padding: 20px;
+  color: #fff;
+  background: rgb(175, 93, 151);
+  background: linear-gradient(
+    143deg,
+    rgba(175, 93, 151, 1) 0%,
+    rgba(179, 0, 255, 1) 46%,
+    rgba(86, 70, 241, 1) 100%
+  );
+  &__title {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+}
