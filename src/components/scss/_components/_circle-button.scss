@@ -5,6 +5,8 @@
 }
 
 .circle-button {
+  transition-duration: 500ms;
+
   position: fixed;
   width: 65px;
   height: 65px;
@@ -21,7 +23,7 @@
   &:before,
   &:after {
     position: absolute;
-    content: '';
+    content: "";
     width: 40%;
     height: 3px;
     background-color: #fff;
@@ -33,5 +35,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(90deg);
+  }
+  &.is-active {
+    transform: translateX(-50%) rotate(45deg);
   }
 }
