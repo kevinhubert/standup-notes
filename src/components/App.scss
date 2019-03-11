@@ -1,15 +1,9 @@
-@import './scss/_components/checklist-item', './scss/_components/circle-button',
+@import './scss/_base/colors';
+
+@import './scss/_components/checklist', './scss/_components/circle-button',
   './scss/_components/_navigation', './scss/_components/_header';
 #root {
   padding-bottom: 10vh;
-}
-.items-section {
-  padding-bottom: 10px;
-  background-color: #efefef;
-  &__title {
-    background-color: #fff;
-    text-align: center;
-    font-size: 2rem;
-    padding: 10px 0;
-  }
+  max-width: 900px;
+  margin: 0 auto;
 }

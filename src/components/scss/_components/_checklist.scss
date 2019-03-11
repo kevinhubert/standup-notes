@@ -1,0 +1,22 @@
+.items-section {
+  padding-bottom: 10px;
+  background-color: #efefef;
+  &__title {
+    background-color: #fff;
+    color: $color-brand-primary;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 0;
+  }
+}
+
+.checklist-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 25px;
+  background: #fff;
+  padding: 20px;
+  &__task {
+    font-weight: 700;
+  }
+}

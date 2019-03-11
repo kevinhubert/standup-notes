@@ -9,7 +9,17 @@
     rgba(86, 70, 241, 1) 100%
   );
   &__title {
+    margin-bottom: 10px;
     font-size: 3rem;
     font-weight: 100;
+  }
+}
+
+.current-date {
+  display: flex;
+  font-weight: 700;
+  &__date {
+    margin-left: 5px;
+    font-weight: 400;
   }
 }
