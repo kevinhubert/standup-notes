@@ -1,6 +1,7 @@
 @import './scss/_base/colors';
 
-@import './scss/_components/checklist', './scss/_components/circle-button',
+@import './scss/_components/checklist', './scss/_components/action-button',
+  './scss/_components/action-button-menu-items',
   './scss/_components/_navigation', './scss/_components/_header';
 #root {
   padding-bottom: 10vh;

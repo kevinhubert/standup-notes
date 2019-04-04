@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import ActionButtonMenuItems from './ActionButtonMenuItems';
 
 class ActionButton extends React.Component {
   constructor(props) {
@@ -6,18 +7,23 @@ class ActionButton extends React.Component {
     this.state = { isactive: false };
   }
   handleClick = () => {
-    console.log("clicked");
+    console.log('clicked');
     const currentState = this.state.isactive;
     this.setState({ isactive: !currentState });
   };
   render() {
     return (
-      <div
-        className={
-          this.state.isactive ? "circle-button is-active" : "circle-button"
-        }
-        onClick={this.handleClick}
-      />
+      <div>
+        {this.state.isactive ? (
+          <ActionButtonMenuItems handleClick={this.handleClick} />
+        ) : null}
+        <div
+          className={
+            this.state.isactive ? 'circle-button is-active' : 'circle-button'
+          }
+          onClick={this.handleClick}
+        />
+      </div>
     );
   }
 }
